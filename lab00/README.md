@@ -28,25 +28,41 @@ This message shows that your installation appears to be working correctly.
 
 **Using IBM Cloud Private**
 
-The environment we'll use for this session is an IBM Cloud Private cluster. 
+The environment we'll use for this session is an IBM Cloud Private cluster.
 
 [IBM Cloud Private](https://www.youtube.com/watch?v=yzXA3qhfaq0) is an application platform for developing and managing on-premises, containerized applications. It is an integrated environment for managing containers that includes the container orchestrator Kubernetes, a private image repository, a management console, and monitoring frameworks.
 
 Make sure you remember the number next to your name on the sign-up sheet... that'll help you figure out your username so you can login to the cluster.
 
+We'll also need to [install the kubectl client](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-via-curl)...
 
-We'll also need to [install the kubectl client](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-via-curl)... for this tutorial we'll install the current version of kubectl ... download either the [Mac](https://dl.k8s.io/v1.10.0/kubernetes-client-darwin-amd64.tar.gz), [Linux](https://dl.k8s.io/v1.10.0/kubernetes-client-linux-amd64.tar.gz) or [Windows](https://dl.k8s.io/v1.10.0/kubernetes-client-windows-amd64.tar.gz) binaries appropriate for your system and make sure its available in your path.
+For this tutorial we'll install the 1.10.5 version of kubectl.
 
-If you're using mac or linux, you'll need to make sure the binary is executeable using 
+You can either manually download the [Mac](https://dl.k8s.io/v1.10.0/kubernetes-client-darwin-amd64.tar.gz), [Linux](https://dl.k8s.io/v1.10.0/kubernetes-client-linux-amd64.tar.gz) or [Windows](https://dl.k8s.io/v1.10.0/kubernetes-client-windows-amd64.tar.gz) v1.10.5 binaries appropriate for your system or use the CURL command below.
+
+**Install kubectl binary via curl**
+
+To download a specific version, replace the $(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt) portion of the command with the specific version.
+For example, to download version v1.10.5 on Linux, type:
+
 ```
-$chmod +x kubectl
-$
-$cp ./kubectl /usr/local/bin/kubectl
+curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.10.5/bin/linux/amd64/kubectl
 ```
 
-Now that its executeable, you can copy it in your path by moving it to /usr/local/bin
+Make the kubectl binary executable.
+```
+chmod +x ./kubectl
+```
 
-Next, lets check that kubectl is installed... you should be ready to go!
+If you're using mac or linux, you'll need to make sure the binary is executeable.
+
+Move the binary in to your PATH and make it executible.
+
+```
+sudo mv ./kubectl /usr/local/bin/kubectl
+```
+
+In the next lab, we will check to ensure that kubectl is installed properly
 
 
 ---
