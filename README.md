@@ -30,7 +30,6 @@ In this segment we'll talk through the basics:
 **Deploying an application on kubernetes**
 
 - [lab 05](lab05/README.md): Containerize and deploy a node.js application
-- [lab 06](lab06/README.md): Deploy a multi-container application
 
 
 **Questions?**
