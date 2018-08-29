@@ -36,7 +36,7 @@ Make sure you remember the number next to your name on the sign-up sheet... that
 
 We'll also need to [install the kubectl client](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-via-curl)...
 
-For this tutorial we'll install the 1.10.5 version of kubectl.
+For this tutorial we'll install the 1.10.0 version of kubectl.
 
 You can either manually download the [Mac](https://dl.k8s.io/v1.10.0/kubernetes-client-darwin-amd64.tar.gz), [Linux](https://dl.k8s.io/v1.10.0/kubernetes-client-linux-amd64.tar.gz) or [Windows](https://dl.k8s.io/v1.10.0/kubernetes-client-windows-amd64.tar.gz) v1.10.5 binaries appropriate for your system or use the CURL command below.
 
@@ -46,7 +46,7 @@ To download a specific version, replace the $(curl -s https://storage.googleapis
 For example, to download version v1.10.5 on Linux, type:
 
 ```
-curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.10.5/bin/linux/amd64/kubectl
+curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.10.0/bin/linux/amd64/kubectl
 ```
 
 Make the kubectl binary executable.
