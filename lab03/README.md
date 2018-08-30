@@ -26,21 +26,6 @@ Click the copy button to capture details for configuring the kubectl client and 
 
 ![](../images/config-box.jpg)
 
-Test your connectivity to **IBM Cloud Private**
-
-```
-kubectl get nodes
-```
-You should see a list of the NODES if successful.
-
-```
-NAME            STATUS    AGE       VERSION
-169.61.122.24   Ready     12d       v1.10.0+icp
-169.61.122.29   Ready     12d       v1.10.0+icp
-169.62.24.162   Ready     12d       v1.10.0+icp
-169.62.24.190   Ready     12d       v1.10.0+icp
-```
-
 The kubectl command line client should be configured..
 
 Now you're connected to the cluster and ready for the next lab.
